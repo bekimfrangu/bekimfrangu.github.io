@@ -1,410 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bekim Frangu</title>
+    <!-- link to css -->
+    <link rel="stylesheet" href="style.css" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- boxicons-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+   <link rel="apple-touch-icon" sizes="76x76" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="apple-mobile-web-app-title" content="clapycodes">
+    <meta name="application-name" content="clapycodes">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff">
+    <!-- favicons -->
+    <link rel="shortcut icon" type="image/png" href="img/favicon.ico">
+    <meta property="og:site_name" content="clapycodes" />
+  </head>
+  <body>
+    <!--- SCroll Top-->
+    <a href="#home" class="scroll-top">
+      <i class="bx bx-chevrons-up"></i>
+    </a>
 
-  <title>My Portfolio</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <!-- navbar -->
+    <header>
+      <a href="#home" class="logo"
+        >Bekim <span class="text-span">Frangu</span></a
+      >
 
+      <div class="bx bx-menu" id="menu-icon"></div>
 
+      <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#myportfolio">My Portfolio</a></li>
+        <div class="bx bx-moon" id="darkmode"></div>
+      </ul>
+    </header>
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-</head>
-
-<body>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center justify-content-between">
-
-      <h1 class="logo"><a href="index.html">BFfolio</a></h1>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto " href="#work">Work</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/cover.jpg)">
-    <div class="overlay-itro"></div>
-    <div class="hero-content display-table">
-      <div class="table-cell">
-        <div class="container">
-          <h1 class="hero-title mb-4">I am Bekim Frangu</h1>
-          <p class="hero-subtitle"><span class="typed" data-typed-items="Developer"></span></p>
-        </div>
+    <!-- home -->
+    <section class="home" id="home">
+      <div class="social">
+        <a href="https://github.com/bekimfrangu" target="_blank"
+          ><i class="bx bxl-github"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/bekim-frangu-329a9014b" target="_blank"
+          ><i class="bx bxl-linkedin"></i
+        ></a>
+        <a
+          href="https://www.facebook.com/BekimFrangu10"
+          target="_blank"
+          ><i class="bx bxl-facebook"></i
+        ></a>
       </div>
-    </div>
-  </div><!-- End Hero Section -->
-
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="box-shadow-full">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="row">
-                    <div class="col-sm-6 col-md-5">
-                      <div class="about-img">
-                        <img src="assets/img/imageCV.jpg" class="img-fluid rounded b-shadow-a" alt="">
-                      </div>
-                    </div>
-                    <div class="col-sm-6 col-md-7">
-                      <div class="about-info">
-                        <p><span class="title-s">Name: </span> <span>Bekim Frangu</span></p>
-                        <p><span class="title-s">Profile: </span> <span>FullStack developer</span></p>
-                        <p><span class="title-s">Email: </span> <span>bekimfrangu7@gmail.com</span></p>
-                        <p><span class="title-s">Phone: </span> <span>(+383) 45-831-871</span></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="skill-mf">
-                    <p class="title-s">Technologies Used</p>
-
-                   <img src="assets/img/html-5.png" alt="HTML5" width="50" height="50">
-                   <img src="assets/img/css.png" alt="CSS3" width="50" height="50">
-                   <img src="assets/img/java-script.png" alt="JAVASCRIPT" width="50" height="50">
-                   <img src="assets/img/php.png" alt="PHP" width="50" height="50">
-                   <img src="assets/img/laravel.png" alt="Laravel" width="50" height="50">
-                   <img src="assets/img/vuejs.png" alt="vuejs" width="50" height="50">
-                   <img src="assets/img/mysql.png" alt="MySQL" width="50" height="50">
-                   <img src="assets/img/firebase.png" alt="firebase" width="50" height="50">
-                   <img src="assets/img/sql-server.png" alt="sql-server" width="50" height="50">
-                   <img src="assets/img/mongo.png" alt="mongo" width="50" height="50">
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="about-me pt-4 pt-md-0">
-                    <div class="title-box-2">
-                      <h5 class="title-left">
-                        About me
-                      </h5>
-                    </div>
-                    <p class="lead text-justify">
-                      I am Bekim Frangu, a FullStack Developer. 
-                    </p>
-                    <p class="lead text-justify">
-                      Experienced in Backend and Frontend languages, specific languages such as: HTML5, CSS3, 
-                      Javascript, PHP and Laravel, then database modules such as MySQL, SQL Server, NoSQL databases, also having knowledge in 
-                      the part of creating reports and generating them using Business Intelligence services. 
-                    </p>
-                    <p class="lead text-justify">
-                      Challenging myself with new things it is the reason that keeps me motivated.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="home-img">
+        <img src="img/pf.png" alt="Profile Pic" />
       </div>
-    </section><!-- End About Section -->
-    <hr>
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services-mf pt-5 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Services
-              </h3>
-              <p class="subtitle-a">
-               These are some of services I do.
-              </p>
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-        
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-card-checklist"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Web Development</h2>
-                <p class="s-description text-center">
-                  Web development using PHP/Laravel in backend and HTML5, CSS3, JAVASCRIPT, Bootstrap 
-                  and other technologies which are more present. Giving the feeling of profesional work and good style vision.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-binoculars"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Responsive Design</h2>
-                <p class="s-description text-center">
-                  Make Responsive design to create content that adjusts smoothly to various screen sizes. 
-                  Designing size elements in relative units and apply media queries for better designs.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-bar-chart"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">BI Services</h2>
-                <p class="s-description text-center">
-                  Make technical reports and analyse data using Business Intelligence services like SSRS,
-                  SSAS and SSIS package integrating Power BI and other tools describing data graphically.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End Services Section -->
-<hr>
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="work" class="portfolio-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Portfolio
-              </h3>
-              <p class="subtitle-a">
-               Here as some of my projects.
-              </p>
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/KIT.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">KIT</h2>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="home-text">
+        <span>hello everyone, i'm</span>
+        <h1>Bekim Frangu</h1>
+        <h2>Software Developer</h2>
+        <p>
           
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/UMP/Cover.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">UMP</h2>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="UMP_details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          A software developer with a knack for designing website architectures and APIs.
+          Experienced at using SQL and NoSQL databases and Business Intelligence Services to generate reports <br />
+        </p>
+        <a href="mailto:bekimfrangu7@gmail.com" class="btn">Contact Me</a>
+      </div>
+    </section>
+
+    <!-- about -->
+    <section class="about" id="introduction">
+      <div class="heading">
+        <h2>About Me</h2>
+      </div>
+
+      <div class="about-container">
+        <div class="about-img">
+          <img
+            src="img/casual-life-3d-man-working-on-laptop-and-drinking-coffee.png"
+            alt="Man working on laptop and drinking coffee"
+          />
+        </div>
+        <div class="about-text">
+          <p align="justify"> 
+            Goal-oriented developer with extensive expertise in website architecture design and web API design.
+            Demonstrated ability to complete projects efficiently and effectively, with a meticulous attention to detail
+            and a creative approach. Proficient in Backend and Frontend technologies, including SQL and NoSQL
+            databases. Experienced in utilizing Business Intelligence Services to create and generate reports.
+            Committed to ongoing learning and professional development, including the adoption of new
+            programming languages and the creation of innovative applications. Challenging myself with new things it
+            is the reason that keeps me motivated.
+          </p>
+          <div class="information">
+            <div class="info-box">
+              <i class="bx bxs-envelope"></i>
+              <a href="mailto:bekimfrangu7gmail" target="_blank"
+                ><span>bekimfrangu7gmail.com</span></a
+              >
+            </div>
+
+            <div class="info-box">
+              <i class="bx bxs-map"></i>
+              <span>Viti, Kosovo</span>
             </div>
           </div>
-
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/UMPPFTI/Cover.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">UMPPFTI</h2>
-
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="UMPPFTI_details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/sdv.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/SDV/cover.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">SDV</h2>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="SDV_details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/BFstore.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/BFstore.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">B&F Store</h2>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="BFStore_details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/hs_cover.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/hs_cover.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">PureService Coop</h2>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="hs_details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> -->
+          <a href="Bekim'sResume.pdf" download="" class="btn"
+            >Download Cv <i class="bx bxs-download"></i
+          ></a>
         </div>
       </div>
-    </section><!-- End Portfolio Section -->
+    </section>
 
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-color: #262626;">
-      <div class="overlay-mf"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="contact-mf">
-              <div id="contact" class="box-shadow-full">
-                <div class="row">
-                 
-                  <div class="col-md-12 text-center">
-                    <div class="title-box-2 pt-4 pt-md-0">
-                      <h5 class="title-left">
-                        Get in Touch
-                      </h5>
-                    </div>
-                    <div class="more-info">
-                
-                      <ul class="list-ico">
-                        <li><span class="bi bi-geo-alt"></span>Sllatine e Poshtme, Viti, 61000</li>
-                        <li><span class="bi bi-phone"></span> (+383) 45-831-871</li>
-                        <li><span class="bi bi-envelope"></span> <a href="mailto:bekimfrangu7@gmail.com">bekimfrangu7@gmail.com</a></li>
-                      </ul>
-                    </div>
-                
-                  </div>
-                </div>
-              </div>
+    <!-- skills -->
+    <section class="skills" id="skills">
+      <div class="heading">
+        <h2>Skills</h2>
+      </div>
+      <!-- Skills Content -->
+      <div class="skills-container">
+        <div class="bars">
+          <div class="col-lg-12">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"><img src="img/skills/html-5.png" alt="html" width="50" height="50"></a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"><img src="img/skills/css.png" alt="CSS3" width="50" height="50"></a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img src="img/skills/java-script.png" alt="JAVASCRIPT" width="50" height="50"></a>
+            <a href="https://www.typescriptlang.org/docs/" target="_blank"><img src="img/skills/ts.png" alt="ts" width="50" height="50"></a>
+            <a href="https://reactjs.org/docs/getting-started.html" target="_blank"><img src="img/skills/react.png" alt="react" width="50" height="50"></a>
+            <a href="https://www.php.net/docs.php" target="_blank"><img src="img/skills/php.png" alt="PHP" width="50" height="50"></a>
+            <a href="https://laravel.com/docs/10.x/installation" target="_blank"><img src="img/skills/laravel.png" alt="Laravel" width="50" height="50"></a>
+            <a href="https://docs.python.org/3/" target="_blank"><img src="img/skills/python.png" alt="python" width="50" height="50"></a>
+            <a href="https://docs.djangoproject.com/en/4.1/" target="_blank"><img src="img/skills/django.png" alt="django" width="50" height="50"></a>
+            <a href="https://dev.mysql.com/doc/" target="_blank"><img src="img/skills/mysql.png" alt="MySQL" width="50" height="50"></a>
+            <a href="https://firebase.google.com/docs/guides" target="_blank"><img src="img/skills/firebase.png" alt="firebase" width="50" height="50"></a>
+            <a href="https://learn.microsoft.com/en-us/sql/sql-server/?view=sql-server-ver16" target="_blank"><img src="img/skills/sql-server.png" alt="sql-server" width="50" height="50"></a>
+            <a href="https://www.mongodb.com/docs/" target="_blank"><img src="img/skills/mongo.png" alt="mongo" width="50" height="50"></a>
+            <a href="https://docs.aws.amazon.com/" target="_blank"><img src="img/skills/aws.png" alt="mongo" width="50" height="50"></a>
+        </div>
+        </div>
+        <div class="skills-img">
+          <img src="img/7118756_3426526-removebg-preview.png" alt="skills" />
+        </div>
+      </div>
+    </section>
+
+    <!-- portfolio -->
+    <section class="portfolio" id="myportfolio">
+      <div class="heading">
+        <h2>Projects</h2>
+      </div>
+      <div class="portfolio-content">
+        <div class="portfolio-card">
+          <div class="portfolio-img">
+            <img src="img/sdv.png" alt="Dgital Voting System" />
+          </div>
+          <div class="card-content">
+            <h2>Digital Voting System</h2>
+            <h3>Web Development</h3>
+            <p>
+              SDV is a web-based app that simplifies the voting process with user and admin modules. Users can view candidates and vote, while admins manage everything from regions to election statistics.
+            </p> 
+            <div class="btns">
+            <a href="https://github.com/bekimfrangu/digital-voting-system" target="_blank" class="btn-text" style="color: blue">
+              <span class="span">Preview Project</span>
+
+              <i class="bx bxs-right-arrow-alt"></i>
+            </a>
+            <!-- <a href="https://clapycodes.gumroad.com/l/warehouse-company" target="_blank" class="btn-text">
+              <span class="span">Buy It</span>
+              <i class="bx bxs-right-arrow-alt bxss"></i>
+            </a> -->
             </div>
           </div>
         </div>
-      </div>
-    </section><!-- End Contact Section -->
 
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="copyright-box">
-            <p class="copyright">&copy; Copyright <strong>2022</strong>. All Rights Reserved</p>
+        <!-- img 2 -->
+        <div class="portfolio-card">
+          <div class="portfolio-img">
+            <img src="img/ump.png" alt="Web Exam Management Application" />
+          </div>
+          <div class="card-content">
+            <h2>Web Exam Management Application</h2>
+            <h3>Web Development</h3>
+            <p>
+              UMP is a web app for students to manage exams, with User and Admin modules. Students can view and register for exams, while Admin handles exams, users, questions, professors, and the site's UI.
+            </p>
+            <div class="btns">
+              <a href="https://github.com/bekimfrangu/exams-management-system" target="_blank" class="btn-text" style="color: blue">
+                <span class="span">Preview Project</span>
+  
+                <i class="bx bxs-right-arrow-alt"></i>
+              </a>
+                </div>
           </div>
         </div>
+
+        <!-- img 3 -->
+        <div class="portfolio-card">
+          <div class="portfolio-img">
+            <img src="img/umppfti.png" alt="Job Portal" />
+          </div>
+          <div class="card-content">
+            <h2>Job Portal</h2>
+            <h3>Web Development</h3>
+            <p>
+              UMPPFTI is a web app for job seekers with User and Admin modules. Users can view open positions and contact companies, while Admin manages companies, positions, users, contacts, and the site's UI.
+            </p>
+            <div class="btns">
+              <a href="https://github.com/bekimfrangu/job-portal-management-system" target="_blank" class="btn-text" style="color: blue">
+                <span class="span">Preview Project</span>
+  
+                <i class="bx bxs-right-arrow-alt"></i>
+              </a>
+                </div>
+          </div>
+        </div>
+
+        <!-- img 4 -->
+        <div class="portfolio-card">
+          <div class="portfolio-img">
+            <img src="img/Ecom.png" alt="E commerce" />
+          </div>
+          <div class="card-content">
+            <h2>B&F Store</h2>
+            <h3>Web Development</h3>
+            <p>
+              B&F Store is an e-commerce system with User and Admin modules. Users can view devices, order and pay for products, while Admin manages products, orders, contacts, users, order details, and categories.
+            </p>
+            <div class="btns">
+              <a href="https://github.com/bekimfrangu/e-commerce" target="_blank" class="btn-text" style="color: blue">
+                <span class="span">Preview Project</span>
+  
+                <i class="bx bxs-right-arrow-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- img 5 -->
+        <div class="portfolio-card">
+          <div class="portfolio-img">
+            <img src="img/kit.png" alt="IT Club" />
+          </div>
+          <div class="card-content">
+            <h2>IT Club Web</h2>
+            <h3>Web App</h3>
+            <p>
+              Klubi i IT is a frontend project showcasing an IT club's services, projects, attitude, and contact details, integrating JavaScript tech.
+            </p>
+            <div class="btns">
+              <a href="#" target="_blank" class="btn-text" style="color: blue">
+                <span class="span">Preview Project</span>
+                <i class="bx bxs-right-arrow-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      
       </div>
+      <div class="btns">
+        <a href="https://github.com/bekimfrangu" target="_blank" class="btn-text" style="color: blue">
+          <span class="span">Vew More</span>
+
+          <i class="bx bxs-right-arrow-alt"></i>
+        </a>
+      </div>
+    </section>
+
+    <div class="cursor"></div>
+    <!-- copyright -->
+    <div class="copyright">
+      <p>&#169;BekimFrangu 2023</p>
     </div>
-  </footer><!-- End  Footer -->
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
+    <!-- link to js --> 
+    <script src="main.js"></script>
+    <!-- Start of OpenWidget (www.openwidget.com) code -->
+    <script>
+      window.__ow = window.__ow || {};
+      window.__ow.organizationId = "b85c5de7-5e89-437b-8c15-7c070757cb5c";
+      ;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[OpenWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.openwidget.com/openwidget.js",t.head.appendChild(n)}};!n.__ow.asyncInit&&e.init(),n.OpenWidget=n.OpenWidget||e}(window,document,[].slice))
+    </script>
+    <!-- End of OpenWidget code -->
+  </body>
 </html>
